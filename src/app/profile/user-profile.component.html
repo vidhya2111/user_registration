@@ -1,0 +1,14 @@
+<mat-grid-list cols="1" rowHeight="500px">
+  <mat-grid-tile>
+    <mat-card *ngIf="userProfile" class="user-profile-card">
+      <mat-card-title>User profile</mat-card-title>
+      <hr />
+      <mat-card-content>
+        <h3>{{ userProfile.name }}</h3>
+        <h3>{{ userProfile.email }}</h3>
+        <h3>{{ userProfile.bio }}</h3>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<br />
